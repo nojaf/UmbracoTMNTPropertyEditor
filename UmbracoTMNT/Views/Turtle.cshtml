@@ -1,0 +1,29 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using UmbracoTMNT.Models;
+@{
+    Layout = null;
+    NinjaTurtle turtle = Model.Content.GetPropertyValue<NinjaTurtle>("properties");
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@turtle.Name</title>
+    <link href="~/css/style.css" rel="stylesheet" />
+</head>
+<body style="background-image:url(@turtle.BackgroundImage)">
+    <h1>@turtle.Name</h1>
+    <div class="center">
+    <div class="content">
+        @turtle.Info
+    </div>
+    <p>&nbsp;</p>
+    <dl>
+      <dt>Weapon</dt>
+      <dd>@turtle.Weapon</dd>
+      <dt>Color</dt>
+      <dd class="color" style="background-color:@turtle.Color">&nbsp;</dd>
+    </dl>
+    <a href="/">Back</a>
+        </div>
+</body>
+</html>

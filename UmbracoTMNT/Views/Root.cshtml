@@ -1,0 +1,33 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using UmbracoTMNT.Models;
+@{
+    Layout = null;
+    var turtlesNodes = Model.Content.Children.ToArray();
+    List<NinjaTurtle> turtles = new List<NinjaTurtle>();
+    foreach (var item in turtlesNodes)
+    {
+        turtles.Add(item.GetPropertyValue<NinjaTurtle>("properties"));
+    } 
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TMNT!</title>
+    <link href="~/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Teenage Mutant Ninja Turtles</h1>
+    <div class="container">
+        @for (int i = 0; i < turtles.Count; i++)
+        {
+            <div class="homeTurtle">
+                <div>
+                    <img src="@turtles[i].SmallImage" />
+                                    <a href="@turtlesNodes[i].Url">@turtles[i].Name</a>
+                </div>
+
+            </div>
+        }
+    </div>
+</body>
+</html>

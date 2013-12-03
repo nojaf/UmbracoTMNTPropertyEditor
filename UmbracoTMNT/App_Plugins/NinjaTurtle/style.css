@@ -1,0 +1,22 @@
+﻿#ninjaContainer select{
+    color:white;
+    background-color:#5fac69;
+}
+
+#ninjaContainer label{
+    width:15%;
+    margin-right:5px;
+}
+
+#ninjaContainer .row{
+    margin-bottom:10px;
+}
+
+#ninjaContainer textarea{
+    width:500px;
+    min-height:300px;
+}
+
+#ninjaContainer img{
+    width:100px;
+}

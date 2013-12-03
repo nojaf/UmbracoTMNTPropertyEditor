@@ -1,0 +1,32 @@
+﻿<div id="ninjaContainer" ng-controller="Nojaf.NinjaTurtleEditor">
+    <div class="row">
+        <label>Name:</label>
+        <input type="text" name="Name" class="form-control" ng-model="model.value.Name" />
+    </div>
+    <div class="row">
+        <label>Color:</label>
+        <select ng-model="model.value.Color" class="col-sm-2" style="background-color: {{model.value.Color}}">
+            <option ng-repeat="color in colors" value="{{color}}" style="background-color: {{color}}">{{color}}</option>
+        </select>
+    </div>
+    <div class="row">
+        <label>Weapon:</label>
+        <select ng-model="model.value.Weapon">
+            <option ng-repeat="weapon in weapons" value="{{weapon}}">{{weapon}}</option>
+        </select>
+    </div>
+    <div class="row">
+        <label>Info:</label>
+        <textarea ng-model="model.value.Info"></textarea>
+    </div>
+    <div class="row">
+        <label>Small image:</label>
+        <img src="{{model.value.SmallImage}}" />
+        <button ng-click="openMediaPickerSmallImage()">Pick</button>
+    </div>
+    <div class="row">
+        <label>Background</label>
+        <img src="{{model.value.BackgroundImage}}" />
+        <button ng-click="openMediaPickerBg()">Pick</button>
+    </div>
+</div>

@@ -1,0 +1,71 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Lato:400,900);
+
+body{
+    background-image:url(/media/1005/bg.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width:100%;
+  height:100%;
+      font-family:Lato,sans-serif;
+}
+
+h1{
+
+    font-size:100px;
+    text-align:center;
+    color:#5fac69;
+       -webkit-text-stroke-width: 3px;
+   -webkit-text-stroke-color: #ffd800;
+    
+}
+
+.container{
+    width:1024px;
+    margin:auto;
+    display:block;
+    position:fixed;
+    bottom:25px;
+    left:50%;
+    margin-left:-512px;
+}
+
+.homeTurtle{
+    width:25%;
+    float:left;
+}
+
+.homeTurtle div{
+    width:100px;
+    margin:auto;
+}
+
+.homeTurtle div img{
+    height:150px;
+}
+
+
+a:link{
+    color:#168a25;
+    text-decoration:none;
+}
+a:hover{
+    color:#5fac69;
+}
+
+a:visited{
+    color:#46764c;
+}
+
+.center{
+    width:400px;
+    margin:auto;
+    color:#FFF;
+}
+
+.center a{
+    background-color:#ffd800;
+    border-radius:3px;
+    padding:5px;
+}
