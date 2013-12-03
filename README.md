@@ -3,7 +3,7 @@ UmbracoTMNTPropertyEditor
 
 An Umbraco 7 property editor based on a C# class.
 
-All info you need to make this on your own you'll find on [the official docs](http://umbraco.github.io/Belle/#/api) and on [nibble.be](http://www.nibble.be/).
+All the info you need to make this on your own you'll find on [the official docs](http://umbraco.github.io/Belle/#/api) and on [nibble.be](http://www.nibble.be/).
 
 If there are any questions or remarks, feel free to contact me.
 
