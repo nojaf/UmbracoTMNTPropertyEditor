@@ -6,13 +6,13 @@
     <div class="row">
         <label>Color:</label>
         <select ng-model="model.value.Color" class="col-sm-2" style="background-color: {{model.value.Color}}">
-            <option ng-repeat="color in colors" value="{{color}}" style="background-color: {{color}}">{{color}}</option>
+            <option ng-repeat="color in colors" value="{{color}}" ng-selected="color == model.value.Color" style="background-color: {{color}}">{{color}}</option>
         </select>
     </div>
     <div class="row">
         <label>Weapon:</label>
         <select ng-model="model.value.Weapon">
-            <option ng-repeat="weapon in weapons" value="{{weapon}}">{{weapon}}</option>
+            <option ng-repeat="weapon in weapons" ng-selected="weapon == model.value.Weapon" value="{{weapon}}">{{weapon}}</option>
         </select>
     </div>
     <div class="row">
