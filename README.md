@@ -7,6 +7,10 @@ An Umbraco 7 property editor based on a C# class.
 
 ![C# class](http://i.imgur.com/3SUHuGM.jpg "C# class")
 
+**The majestic converter class**
+
+![Converter class](http://i.imgur.com/erDKPB9.jpg "Convert class")
+
 **The controller:**
 
 ![The controller](http://i.imgur.com/qcQ7LZK.jpg "The controller")
