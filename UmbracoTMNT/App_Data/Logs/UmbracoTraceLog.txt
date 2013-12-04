@@ -37,3 +37,18 @@ System.MissingMethodException: No parameterless constructor defined for this obj
 2013-12-04 00:03:16,360 [10] INFO  Umbraco.Core.PluginManager - [Thread 7] Completed resolution of types of Umbraco.Core.PropertyEditors.PropertyEditor, found 33 (took 21ms)
 2013-12-04 00:08:18,973 [10] INFO  Umbraco.Core.PluginManager - [Thread 28] Starting resolution types of Umbraco.Web.Trees.TreeController
 2013-12-04 00:08:18,974 [10] INFO  Umbraco.Core.PluginManager - [Thread 28] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 0ms)
+2013-12-04 00:40:05,171 [10] INFO  Umbraco.Web.Security.WebSecurity - [Thread 52] User Id: 0 logged in
+2013-12-04 00:40:05,444 [10] INFO  Umbraco.Core.PluginManager - [Thread 49] Starting resolution types of umbraco.interfaces.ITree
+2013-12-04 00:40:05,463 [10] INFO  Umbraco.Core.PluginManager - [Thread 49] Completed resolution of types of umbraco.interfaces.ITree, found 35 (took 18ms)
+2013-12-04 00:41:06,601 [10] INFO  Umbraco.Core.PluginManager - [Thread 53] Starting resolution types of Umbraco.Web.Trees.TreeController
+2013-12-04 00:41:06,602 [10] INFO  Umbraco.Core.PluginManager - [Thread 53] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 0ms)
+2013-12-04 00:44:42,745 [10] INFO  Umbraco.Core.PluginManager - [Thread 30] Starting resolution types of Umbraco.Web.Trees.TreeController
+2013-12-04 00:44:42,745 [10] INFO  Umbraco.Core.PluginManager - [Thread 30] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 0ms)
+2013-12-04 00:47:30,556 [10] INFO  Umbraco.Core.PluginManager - [Thread 51] Starting resolution types of Umbraco.Web.Trees.TreeController
+2013-12-04 00:47:30,556 [10] INFO  Umbraco.Core.PluginManager - [Thread 51] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 0ms)
+2013-12-04 00:47:59,129 [10] INFO  Umbraco.Core.PluginManager - [Thread 28] Starting resolution types of Umbraco.Web.Trees.TreeController
+2013-12-04 00:47:59,130 [10] INFO  Umbraco.Core.PluginManager - [Thread 28] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 0ms)
+2013-12-04 00:49:37,942 [10] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of Umbraco.Web.Trees.TreeController
+2013-12-04 00:49:37,942 [10] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 0ms)
+2013-12-04 00:49:56,154 [10] INFO  Umbraco.Core.PluginManager - [Thread 28] Starting resolution types of Umbraco.Web.Trees.TreeController
+2013-12-04 00:49:56,154 [10] INFO  Umbraco.Core.PluginManager - [Thread 28] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 0ms)

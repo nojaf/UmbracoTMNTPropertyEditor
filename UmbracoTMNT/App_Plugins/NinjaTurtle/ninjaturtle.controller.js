@@ -4,7 +4,7 @@ angular.module("umbraco").controller("Nojaf.NinjaTurtleEditor", ninjaCtrl);
 function ninjaCtrl($scope, dialogService, imageHelper) {
     $scope.colors = ["#55497B", "#246E91", "#7B2228", "#DF572D"];
     $scope.weapons = ["katana's", "bo-staf", "sais", "nunchaku's"];
-
+    console.log($scope.model.value);
     if ($scope.model.value === undefined || $scope.model.value === "") {
         $scope.model.value = {
             Name: "",
@@ -15,6 +15,8 @@ function ninjaCtrl($scope, dialogService, imageHelper) {
             BackgroundImage: ""
         };
     }
+
+    $scope.model.value.Color = $scope.colors[colorIndex];
 
     $scope.openMediaPickerSmallImage = function () {
         dialogService.mediaPicker({ callback: doneSmallImage });
