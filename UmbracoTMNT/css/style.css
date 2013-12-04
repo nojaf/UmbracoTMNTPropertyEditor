@@ -62,10 +62,13 @@ a:visited{
     width:400px;
     margin:auto;
     color:#FFF;
+    background-color:rgba(0,0,0,0.66);
+    border-radius:10px;
+    padding:10px;
 }
 
 .center a{
-    background-color:#ffd800;
+    background-color:#FFF;
     border-radius:3px;
     padding:5px;
 }

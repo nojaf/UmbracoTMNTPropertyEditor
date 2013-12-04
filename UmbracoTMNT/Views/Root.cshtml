@@ -18,14 +18,13 @@
 <body>
     <h1>Teenage Mutant Ninja Turtles</h1>
     <div class="container">
-        @for (int i = 0; i < turtles.Count; i++)
+        @foreach (var turtle in turtles)
         {
             <div class="homeTurtle">
                 <div>
-                    <img src="@turtles[i].SmallImage" />
-                                    <a href="@turtlesNodes[i].Url">@turtles[i].Name</a>
+                    <img src="@turtle.SmallImage" />
+                    <a href="@uQuery.GetNode(turtle.Id).NiceUrl">@turtle.Name</a>
                 </div>
-
             </div>
         }
     </div>

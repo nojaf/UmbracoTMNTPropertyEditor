@@ -1,12 +1,16 @@
 ﻿/// <reference path="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js" />
 angular.module("umbraco").controller("Nojaf.NinjaTurtleEditor", ninjaCtrl);
 
-function ninjaCtrl($scope, dialogService, imageHelper) {
+function ninjaCtrl($scope, dialogService, $route) {
     $scope.colors = ["#55497B", "#246E91", "#7B2228", "#DF572D"];
     $scope.weapons = ["katana's", "bo-staf", "sais", "nunchaku's"];
     console.log($scope.model.value);
+
     if ($scope.model.value === undefined || $scope.model.value === "") {
+        //The initial json object is an educated guess that it will map from the c# class
         $scope.model.value = {
+            //Will be added in the onpublished event, check Event folder
+            Id: $route.current.params.id,
             Name: "",
             Color: "",
             Weapon: "",
@@ -16,7 +20,7 @@ function ninjaCtrl($scope, dialogService, imageHelper) {
         };
     }
 
-    $scope.model.value.Color = $scope.colors[colorIndex];
+
 
     $scope.openMediaPickerSmallImage = function () {
         dialogService.mediaPicker({ callback: doneSmallImage });

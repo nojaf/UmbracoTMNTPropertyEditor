@@ -10,6 +10,10 @@ namespace UmbracoTMNT.Models
 {
     public class NinjaTurtle
     {
+        public const string TURTLE_ALIAS = "Turtle";
+        public const string PROPERTIES_ALIAS = "properties";
+
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Color { get; set; }
         public string Weapon { get; set; }
@@ -34,6 +38,7 @@ namespace UmbracoTMNT.Models
 
             try
             {
+                //You might want to do some more validation, but you know ...
                 return JsonConvert.DeserializeObject<NinjaTurtle>(sourceString);
             }
             catch (Exception ex)
