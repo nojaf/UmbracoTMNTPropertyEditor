@@ -6,7 +6,7 @@
     List<NinjaTurtle> turtles = new List<NinjaTurtle>();
     foreach (var item in turtlesNodes)
     {
-        turtles.Add(item.GetPropertyValue<NinjaTurtle>("properties"));
+        turtles.Add(item.GetPropertyValue<NinjaTurtle>(NinjaTurtle.PROPERTIES_ALIAS));
     } 
 }
 <!DOCTYPE html>

@@ -9,7 +9,6 @@ function ninjaCtrl($scope, dialogService, $route) {
     if ($scope.model.value === undefined || $scope.model.value === "") {
         //The initial json object is an educated guess that it will map from the c# class
         $scope.model.value = {
-            //Will be added in the onpublished event, check Event folder
             Id: $route.current.params.id,
             Name: "",
             Color: "",

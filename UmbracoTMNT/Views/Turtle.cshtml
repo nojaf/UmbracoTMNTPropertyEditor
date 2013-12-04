@@ -2,7 +2,7 @@
 @using UmbracoTMNT.Models;
 @{
     Layout = null;
-    NinjaTurtle turtle = Model.Content.GetPropertyValue<NinjaTurtle>("properties");
+    NinjaTurtle turtle = Model.Content.GetPropertyValue<NinjaTurtle>(NinjaTurtle.PROPERTIES_ALIAS);
 }
 <!DOCTYPE html>
 <html>
