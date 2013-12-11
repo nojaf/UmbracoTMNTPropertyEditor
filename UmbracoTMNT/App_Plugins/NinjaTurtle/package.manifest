@@ -26,7 +26,10 @@
     ,
     //array of files we want to inject into the application on app_start
     javascript: [
+		'~/App_Plugins/NinjaTurtle/tinymce4.js',
+		'~/App_Plugins/NinjaTurtle/tinymce-angular.js',
         '~/App_Plugins/NinjaTurtle/ninjaturtle.controller.js'
+
     ],
     css:[ '~/App_Plugins/NinjaTurtle/style.css']
 }

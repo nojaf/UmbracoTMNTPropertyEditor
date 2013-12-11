@@ -2,12 +2,8 @@
 @using UmbracoTMNT.Models;
 @{
     Layout = null;
-    var turtlesNodes = Model.Content.Children.ToArray();
-    List<NinjaTurtle> turtles = new List<NinjaTurtle>();
-    foreach (var item in turtlesNodes)
-    {
-        turtles.Add(item.GetPropertyValue<NinjaTurtle>(NinjaTurtle.PROPERTIES_ALIAS));
-    } 
+    List<NinjaTurtle> turtles = Model.Content.Children.Select(x => x.GetPropertyValue<NinjaTurtle>(NinjaTurtle.PROPERTIES_ALIAS)).ToList();
+
 }
 <!DOCTYPE html>
 <html>

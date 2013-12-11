@@ -6,6 +6,12 @@ function ninjaCtrl($scope, dialogService, $route) {
     $scope.weapons = ["katana's", "bo-staf", "sais", "nunchaku's"];
     console.log($scope.model.value);
 
+    angular.element(document).ready(function () {
+
+    });
+
+
+
     if ($scope.model.value === undefined || $scope.model.value === "") {
         //The initial json object is an educated guess that it will map from the c# class
         $scope.model.value = {
@@ -41,3 +47,4 @@ function ninjaCtrl($scope, dialogService, $route) {
     }
 
 }
+
