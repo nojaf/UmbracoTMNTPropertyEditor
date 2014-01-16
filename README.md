@@ -31,4 +31,4 @@ The credentials to the backoffice are:
 - login: admin
 - pasw: tmnt
 
-![Turtle power](http://theactionelite.com/site/wp-content/uploads/2013/08/TMNT.jpg "Turtle power")
+![Turtle power](http://cf2.imgobject.com/t/p/original/oBpA0TtEj9sf8uK3iCYvvp1725f.jpg "Turtle power")
